@@ -12,7 +12,7 @@ module MegaLotto
       it "returns an array with 6 elements" do
         expect(draw.size).to eq(6)
       end
-      it "each elemtent is an intger" do
+      it "each element is an integer" do
         draw.each.each do |drawing|
           expect(drawing).to be_a(Integer)
         end
