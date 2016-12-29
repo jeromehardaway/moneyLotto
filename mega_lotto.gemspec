@@ -1,4 +1,10 @@
 # coding: utf-8
+#!usr/bin.env ruby
+require_relative "../lib/mega_lotto/drawing"
+
+drawing = MegaLotto::Drawing.new.draw
+puts drawing
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'mega_lotto/version'
